@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    margin: 2rem auto;
+    padding: 30px;
+    max-width: 1100px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.left h1 {
+    font-size: 2rem;
+}
+
+.left h5 {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.links span, .links a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.right img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.section h1 {
+    font-size: 1.5rem;
+    color: #1DA1F2;
+    padding-bottom: 10px;
+    /* margin: 20px; */
+}
+.section i{
+    margin: 10px;
+}
+
+.section p {
+    text-align: justify;
+}
+
+.inner-edu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.left-edu, .right-edu {
+    flex: 1;
+    min-width: 250px;
+    
+}
+
+.inner-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.inner-skills span {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.inner-skills span:hover {
+    background-color: #1DA1F2;
+    color: white;
+    transform: translateY(-10%);
+}
+
+@media (max-width: 768px) {
+    .inner-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .right img {
+        margin-top: 10px;
+    }
+    
+    .links {
+        justify-content: space-evenly;
+        
+        
+    }
+}
