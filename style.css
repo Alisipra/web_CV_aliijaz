@@ -131,3 +131,12 @@ body {
         
     }
 }
+.downloadBtn{
+    background-color: rgb(223, 26, 105);
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+}
